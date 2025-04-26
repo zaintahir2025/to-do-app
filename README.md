@@ -1,16 +1,24 @@
-# myapp
+todo_list_app
+A new Flutter project — To-Do List App.
 
-A new Flutter project.
+Getting Started
+This project is a beginner-friendly to-do list application built using Flutter. It allows users to:
 
-## Getting Started
+Add new tasks
 
-This project is a starting point for a Flutter application.
+Mark tasks as completed
+
+View a list of completed tasks
+
+Clear all tasks with a single tap
+
+This is my first app after transitioning from no-code development on Bubble.io to native development with Flutter. It's a clean, minimalistic app designed to practice state management, UI building, and navigation.
 
 A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Lab: Write your first Flutter app
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cookbook: Useful Flutter samples
+
+To get started with Flutter development, view the online documentation, which offers tutorials, samples, guidance on mobile development, and a full API reference.
+
