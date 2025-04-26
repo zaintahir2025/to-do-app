@@ -45,11 +45,7 @@ This project is a learning experience, but I’m open to suggestions and feedbac
 Want to connect or collaborate?
 
 **LinkedIn**: https://www.linkedin.com/in/zain-tahir-2k25/ 
+
 **Email**: zaintahir35202@gmail.com
 
----
-
-## 🔖 License
-
-This project is licensed under the [MIT License](LICENSE).
 
