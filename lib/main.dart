@@ -8,6 +8,8 @@ void main() {
 
 // Root widget of the app, defined as a StatelessWidget since it doesn't manage state.
 class ToDoApp extends StatelessWidget {
+  const ToDoApp({super.key});
+
   // Override the build method to describe the UI for this widget.
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,8 @@ class ToDoApp extends StatelessWidget {
 
 // Home page widget, defined as a StatefulWidget to manage dynamic state (e.g., tasks list).
 class ToDoHomePage extends StatefulWidget {
+  const ToDoHomePage({super.key});
+
   // Override createState to provide the State object for this widget.
   @override
   _ToDoHomePageState createState() => _ToDoHomePageState();
@@ -35,7 +39,7 @@ class _ToDoHomePageState extends State<ToDoHomePage> {
   // Create a TextEditingController to manage the TextField's input.
   final TextEditingController _controller = TextEditingController();
   // Initialize an empty list to store tasks, where each task is a map with 'title' and 'completed' fields.
-  List<Map<String, dynamic>> _tasks = [];
+  final List<Map<String, dynamic>> _tasks = [];
 
   // Method to add a new task to the list.
   void _addTask() {
@@ -147,10 +151,10 @@ class _ToDoHomePageState extends State<ToDoHomePage> {
               child: ElevatedButton(
                 // Call _clearTasks when the button is pressed.
                 onPressed: _clearTasks,
-                // Display 'Clear All' as the button's label.
-                child: Text('Clear All'),
                 // Customize the button's style with a red background.
                 style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                // Display 'Clear All' as the button's label.
+                child: Text('Clear All'),
               ),
             ),
             // Add a 20-pixel vertical gap before the task list.
@@ -217,7 +221,7 @@ class CompletedTasksPage extends StatelessWidget {
   final List<Map<String, dynamic>> tasks;
 
   // Constructor to initialize the tasks list.
-  CompletedTasksPage({required this.tasks});
+  const CompletedTasksPage({super.key, required this.tasks});
 
   // Override the build method to describe the UI for this widget.
   @override
